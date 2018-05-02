@@ -11,6 +11,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -25,6 +26,9 @@ public class AlunoController implements Initializable {
 
     @FXML
     private TextField txtNome;
+    
+    @FXML
+    private Button btnSalvar, btnFechar;
 
     /**
      * Initializes the controller class.
@@ -41,6 +45,10 @@ public class AlunoController implements Initializable {
         
         Aluno aluno1 = new Aluno();
         aluno1.setNome(txtNome.getText());
+        
+        em.getTransaction().begin();
+        em.persist(aluno1);
+        em.getTransaction().commit();
     }
 
     @FXML
