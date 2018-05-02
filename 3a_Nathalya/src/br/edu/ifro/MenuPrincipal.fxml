@@ -9,12 +9,22 @@
 
 <AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.MenuPrincipalController">
    <children>
-      <TextField fx:id="txtNumero1" layoutX="23.0" layoutY="37.0" />
-      <TextField fx:id="txtNumero2" layoutX="23.0" layoutY="88.0" />
-      <TextField fx:id="txtResultado" layoutX="23.0" layoutY="138.0" />
-      <Label layoutX="23.0" layoutY="20.0" text="Numero 1" />
-      <Label layoutX="23.0" layoutY="69.0" text="Numero 2" />
-      <Label layoutX="23.0" layoutY="121.0" text="Resultado" />
-      <Button fx:id="btnSoma" layoutX="261.0" layoutY="161.0" mnemonicParsing="false" onAction="#Soma" text="Soma" />
+      <TextField fx:id="txtNumero1" layoutX="18.0" layoutY="60.0" />
+      <TextField fx:id="txtNumero2" layoutX="18.0" layoutY="111.0" />
+      <TextField fx:id="txtResultado" layoutX="18.0" layoutY="161.0" />
+      <Label layoutX="18.0" layoutY="43.0" text="Numero 1" />
+      <Label layoutX="18.0" layoutY="92.0" text="Numero 2" />
+      <Label layoutX="18.0" layoutY="144.0" text="Resultado" />
+      <Button fx:id="btnSoma" layoutX="269.0" layoutY="161.0" mnemonicParsing="false" onAction="#Soma" text="Soma" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="329.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Alunos" />
+                  <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
    </children>
 </AnchorPane>
