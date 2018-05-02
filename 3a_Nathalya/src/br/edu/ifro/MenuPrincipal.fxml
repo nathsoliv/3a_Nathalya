@@ -8,8 +8,13 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.MenuPrincipalController">
-    <children>
-        <Button fx:id="button" layoutX="217.0" layoutY="161.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="89.0" text="Clique aqui!" />
-      <JFXButton layoutX="36.0" layoutY="39.0" />
-    </children>
+   <children>
+      <TextField fx:id="txtNumero1" layoutX="23.0" layoutY="37.0" />
+      <TextField fx:id="txtNumero2" layoutX="23.0" layoutY="88.0" />
+      <TextField fx:id="txtResultado" layoutX="23.0" layoutY="138.0" />
+      <Label layoutX="23.0" layoutY="20.0" text="Numero 1" />
+      <Label layoutX="23.0" layoutY="69.0" text="Numero 2" />
+      <Label layoutX="23.0" layoutY="121.0" text="Resultado" />
+      <Button fx:id="btnSoma" layoutX="261.0" layoutY="161.0" mnemonicParsing="false" onAction="#Soma" text="Soma" />
+   </children>
 </AnchorPane>
