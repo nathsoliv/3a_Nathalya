@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -9,5 +10,6 @@
 <AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
         <Button fx:id="button" layoutX="217.0" layoutY="161.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="89.0" text="Clique aqui!" />
+      <JFXButton layoutX="36.0" layoutY="39.0" />
     </children>
 </AnchorPane>
